@@ -1,0 +1,38 @@
+.formularioCadastro{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background-color: white;
+  padding: 10px;
+  border: solid 1px #254560;
+  border-radius: 5px;
+  flex-shrink: 0;
+  flex-basis: 280px;
+}
+  
+.botaoForm{
+  padding: 5px;
+  width: 50%;
+  background-color: #254560;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+  align-self: center;
+  cursor: pointer;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 5px;
+}
+
+h1, label{
+  color: #254560;
+}
+
+.formularioCadastro h1{
+  text-align: center;
+  color: #254560;;
+}
+

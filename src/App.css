@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+main{
+  width: 100%;
+  height: 100vh;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #254560;
+  color: white;
+  height: 40px;
+}
+
+.div-link-home{
+  flex-grow: 1;
+}
+  
+
+ul{
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  height: 100%;
+  align-items: center;
+  padding-inline: 5px;
+}
+
+a, Link{
+  cursor: pointer;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  
+}
+
+.containerGeral{
+  width: 100%;
+  flex-grow: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('src/images/fundoImage.jpg');
+  background-size: cover;
+  
+  
+}
+
+.divPrincipal{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  
+}
+
