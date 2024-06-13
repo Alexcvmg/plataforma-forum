@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 import { describe, it } from "mocha";
 
-describe('Teste inicial' , () => {
-    it('Teste inicial acessar página', () => {
+describe('Teste E2E' , () => {
+    it('Verificando se o filtro está funcionando, retornando 1 elemento', () => {
         // Visita o site local
         cy.visit('http://localhost:5173/');
 
