@@ -16,7 +16,7 @@ export function TopicoCard(props){
     <div className='div-card-container'>
       {props.topicos.map((topico , index) => (
         <div key={index} className='div-card'>
-          <div className='info-princ'>
+          <div data-cy='topicos' className='info-princ'>
             {logado ? <Link style={estiloLink} to={`/detalhes/${topico.id}`}>{topico.title}</Link> : <h2>{topico.title}</h2>}
             
             <p>Autor: {topico.username} <FaComment style={{color: "white"}}/>{0}</p>

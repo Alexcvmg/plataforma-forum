@@ -115,6 +115,7 @@ export function HomeScreen(props) {
                     <div className='botoesDiv'>{botoesPaginacao()}</div>
                     <div className='ContainerfiltroOrdenacao'>
                       <input
+                        data-cy='input-filtro'
                         value={filterTerm}
                         onChange={event => setFilterTerm(event.target.value)}
                         id='inputSearch'

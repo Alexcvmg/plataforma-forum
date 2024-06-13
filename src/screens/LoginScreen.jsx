@@ -36,6 +36,7 @@ export function LoginScreen (props){
         <div>
         <label>Email:</label>
           <input 
+            data-cy='input-email'
             value = {email} 
             type = 'email' 
             onChange= {(e) => setEmail (e.target.value)} placeholder={textosPlace.textEmail}
@@ -45,13 +46,14 @@ export function LoginScreen (props){
         <div>
           <label>Senha</label>
             <input 
+              data-cy='input-senha'
               value = {senha} 
               type = 'password' 
               onChange= {(e) => setSenha (e.target.value)} placeholder={textosPlace.textSenha}
               required 
              />        
           </div>
-         <button type='submit' className='botaoForm'>Entrar</button>
+         <button data-cy='button-entrar' type='submit' className='botaoForm'>Entrar</button>
         {erro && <p style={{color: "red", justifyContent: "center"}}>{erro}</p>}
       </form>
       )

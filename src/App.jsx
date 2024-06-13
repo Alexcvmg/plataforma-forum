@@ -58,7 +58,7 @@ export default function App() {
             <div className='div-link-outras'> 
               <NavLink to='/cadastro' 
                 style={!userAtivo.logado ? {color: "white"}: {color: "white", display: "none"}}>Cadastrar</NavLink> 
-              {!userAtivo.logado ? <NavLink to='/login' style={{color: "white"}}>Login</NavLink> : <NavLink onClick={deslogarUsuario} style={{color: "white"}}>Logout</NavLink> }
+              {!userAtivo.logado ? <NavLink data-cy='login-button' to='/login' style={{color: "white"}}>Login</NavLink> : <NavLink onClick={deslogarUsuario} style={{color: "white"}}>Logout</NavLink> }
             </div>
           </nav>
         </header>
