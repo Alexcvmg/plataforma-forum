@@ -53,15 +53,15 @@ a, Link{
   flex-grow: 1;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('src/images/fundoImage.jpg');
   background-size: cover;
-  
-  
+  background-repeat: no-repeat;
 }
 
 .divPrincipal{
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-content: center;
-  
 }
+
+
+
 

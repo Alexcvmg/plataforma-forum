@@ -1,11 +1,10 @@
-import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, NavLink, useNavigate } from 'react-router-dom';
 import {LoginScreen} from './screens/LoginScreen';
 import {CadastroScreen} from './screens/CadastroScreen';
 import {HomeScreen} from './screens/HomeScreen';
 import { useState, useEffect } from 'react';
 import {NovoTopicoScreen} from './screens/NovoTopicoScreen';
 import {DetalhesTopicoScreen} from './screens/DetalhesTopicoScreen';
-
 
 
 export default function App() {
@@ -16,6 +15,7 @@ export default function App() {
   const [userAtivo, setUserAtivo] = useState({});  
   const [controle, setControle] = useState(0);
   const [selectedId, setSelectedId] = useState(null);
+  
   
   const controleNovoTopico = () => {
       setControle(prev => prev + 1); 

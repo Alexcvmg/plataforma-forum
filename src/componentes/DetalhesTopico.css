@@ -1,0 +1,132 @@
+.botaoEdit{
+  padding: 5px 10px;
+  background-color: #254560;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.containerEditGeral{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: white;
+  padding: 10px;
+  border: solid 1px #254560;
+  border-radius: 5px;
+  flex-shrink: 0;
+  width: 280px;
+  
+}
+
+.containerInputEdit{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputEdit{
+  width: 100%;
+  padding: 5px;
+}
+
+.containerLabelInput{
+  width: 100%;
+
+}
+
+.containerBotaoEdit{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+
+.containerDetalhes{
+  background-color: #444444;
+  color: rgb(111,168,220);
+  width: 100%;
+  border-radius: 5px;
+  
+}
+
+.containerReacao{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 5px;
+  align-items: center;
+  padding: 5px;
+  border-bottom: solid 1px #666;
+  margin-bottom: 5px;
+  
+}
+
+.botaoReacao{
+  padding: 3px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #254560;
+  color: white;
+  cursor: pointer;
+  
+}
+
+.reacaoMaisContador{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  
+}
+
+.containerDetalhesGeral{
+  width: 100%;
+  padding: 5%;
+  background-color: black;
+  min-height: 94vh;
+  
+}
+
+.containerEditarExcluir{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+}
+
+.containerEditGeralTopico{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.comentarTopicoClass{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 5px;
+  
+}
+
+.spanParte{
+  height: 25px;
+  background-color: black;
+}
+
+.comentariosParte{
+  padding: 5px;
+  border-radius: 5px;
+}
