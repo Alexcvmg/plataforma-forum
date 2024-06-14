@@ -19,7 +19,7 @@ export function TopicoCard(props){
           <div data-cy='topicos' className='info-princ'>
             {logado ? <Link style={estiloLink} to={`/detalhes/${topico.id}`}>{topico.title}</Link> : <h2>{topico.title}</h2>}
             
-            <p>Autor: {topico.username} <FaComment style={{color: "white"}}/>{0}</p>
+            <p>Autor: {topico.username} <FaComment style={{color: "white"}}/></p>
           </div>
           <div className='reacao'>
             <span><BiSolidLike style={{color: "white"}}/>{topico.likes}</span>        

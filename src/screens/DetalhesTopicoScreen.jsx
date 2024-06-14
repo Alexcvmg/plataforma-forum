@@ -13,7 +13,7 @@ export function DetalhesTopicoScreen({ status }) {
   const [novoComentario, setNovoComentario] = useState('');
   const navigate = useNavigate();
 
-  // Parte do editar tópico
+  
   const [isEditing, setIsEditing] = useState(false);
   const [editTitle, setEditTitle] = useState('');
   const [editDescription, setEditDescription] = useState('');
@@ -46,7 +46,7 @@ export function DetalhesTopicoScreen({ status }) {
     fetchTopico();
   }, [id]);
 
-  // Parte do adicionar comentário
+  
   const adicionarComentario = () => {
     if (novoComentario.trim() !== '') {
       const novoComentarioObj = {
@@ -78,7 +78,7 @@ export function DetalhesTopicoScreen({ status }) {
     }
   };
 
-  // Parte do deletar tópico
+  
   const handleDeleteTopic = () => {
     if (status.nome === selectedTopico.username) {
       fetch(`${baseURL}/topicos/${id}.json`, {
@@ -95,7 +95,7 @@ export function DetalhesTopicoScreen({ status }) {
     }
   };
 
-  // Parte do editar tópico
+  
   const handleEditarTopico = () => {
     if (status.nome === selectedTopico.username) {
       const updateTopico = {
@@ -120,7 +120,7 @@ export function DetalhesTopicoScreen({ status }) {
     }
   }
 
-  // Funções para curtir e descurtir o tópico
+  
   const handleLikeTopico = () => {
     const isLiked = selectedTopico.isLiked;
     const updatedLikes = isLiked ? selectedTopico.likes - 1 : selectedTopico.likes + 1;
@@ -151,7 +151,7 @@ export function DetalhesTopicoScreen({ status }) {
       .catch(error => console.error('Erro ao descurtir o tópico:', error));
   };
 
-  // Funções para curtir e descurtir comentário
+  
   const handleLikeComentario = (commentId) => {
     const isLiked = selectedTopico.comments[commentId].isLiked;
     const updatedLikes = isLiked ? selectedTopico.comments[commentId].likes - 1 : selectedTopico.comments[commentId].likes + 1;

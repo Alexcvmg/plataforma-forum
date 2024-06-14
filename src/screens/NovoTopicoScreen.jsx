@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 
 export function NovoTopicoScreen({status, controleNovoTopico }) {
    const baseUrl = "https://forumpb-5520b-default-rtdb.firebaseio.com/";
- // const baseUrl = 'https://plataforma-de-forum-gamificada-default-rtdb.firebaseio.com/';
   const [isLoading, setLoading] = useState(false);
   const [message, setMessage] = useState(null);
   const [title, setTitle] = useState('');
