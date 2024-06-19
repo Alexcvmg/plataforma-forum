@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-
+  
 }
 
 .tituloBotaoHome{
@@ -58,3 +58,10 @@
   padding: 3px;
   border-radius: 5px;
 }
+
+@media (width <= 400px){
+  .ContainerfiltroOrdenacao{
+    flex-direction: column;
+  }
+}
+
